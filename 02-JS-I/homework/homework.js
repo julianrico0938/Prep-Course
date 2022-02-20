@@ -44,7 +44,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var restaxy = (y - x);
+  var restaxy = (x - y);
   return restaxy;
   
 }
@@ -170,10 +170,10 @@ function redondearHaciaArriba(num) {
   
 }
 
-function numeroRandom() {
+function numeroRandom(numero_random) {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
- 
+ return Math.random(numero_random);
   
 }
 
@@ -228,14 +228,16 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  var p = (lado+lado+lado+lado);
+  return p;
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+  var area_triangulo = (base*altura)/2;
+  return area_triangulo;
 }
 
 
@@ -243,7 +245,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  var dolar = 1.2;
+  return euro*dolar;
 }
 
 
@@ -254,10 +257,12 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   
+  if(letra.equalsIgnoreCase = 'a' || 'e' || 'i' || 'o' || 'u'){
+    return "Es vocal";
+  }else if(letra.length){
+  return "Dato incorrecto";
+  }
 }
-
-
-
 // No modificar nada debajo de esta línea
 // --------------------------------
 
