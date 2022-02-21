@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { resetTask } = require("simple-git/src/lib/tasks/reset");
+
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
@@ -170,19 +172,35 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+  if(valor == true){
+    return 'Soy verdadero';
+  }else{
+    return false;
+  }
 }
 
-function tablaDelSeis(){
+function tablaDelSeis(n){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-  
+  //Escribe tu código aquí
+   var n = 6;
+   var x = 0;
+  while (x <= 10){
+    tabla = [ n + "*" + x + (n*x)];
+    x++;
+  }
+  return tabla;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+
+  if(numero.val().length() == 3){
+    return true;
+  }else{
+    return false;
+  }
   
 }
 
