@@ -38,7 +38,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  array[array.length] = elemento;
+  array.push(elemento);
   return array;
 }
 
@@ -232,6 +232,21 @@ function breakStatement(numero) {
     array2.push(suma);
   }
   return array2;
+
+  /*let array = [];
+  let copia = numero;
+  for (let i = 0; i < 10; i++) {
+    copia = copia + 2;
+    array.push(copia);
+    if (copia === i) {
+      break;
+    }
+  }
+    if(i<10){
+      return "Se interrumpió la ejecución";
+    }else{
+      return array;
+    }*/
 }
 
 function continueStatement(numero) {
