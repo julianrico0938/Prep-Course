@@ -6,33 +6,78 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Ejercicio 1: Centrar el texto en un span */
 
 /* Arrancaremos este ejercicio por vos: */
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap');
+body{
+    font-family:'Smooch Sans', sans-serif;
+    font-size: 25px;
+    
+}
+#instructions{
+    color: darkblue;
+}
+span{
+    color: darkblue;
+}
+h1{
+    color: crimson;
+    
+}
+h3{
+    color: crimson;
+    text-align: center;
+}
 #ejercicioUno {
-
+    display: block;
+    text-align: center;
+    color: darkblue;
 }
 
 
 /* Ejercicio 2: Posicionar el header */
 
 /* Acá va tu código */
-
+#ejercicioDos{
+    border: none;
+    }
+    
 
 
 /* Ejercicio 3: */
 
 /* Acá va tu código */
-
+#ejercicioTres{
+    left: 200px;
+    top: 100px;
+    position: relative;
+}
 
 
 /* Ejercicio 4: */
 
 /* Acá va tu código */
-
+#ejercicioCuatro{
+    position: fixed;
+    top: 0px; left: 0; right: 0;
+}
 
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
-
+#ejercicioCinco{
+    display: flex;
+}
 
 
 /* Ejercicio 6. */
+#ejercicioCinco{
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+/* Ejercicio 7. */
+#ejercicioSiete{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
