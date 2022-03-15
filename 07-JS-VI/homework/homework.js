@@ -43,7 +43,7 @@ function forEach(array, cb) {
   //Tu código:
     for (let i = 0; i < array.length; i++) {
       cb(array[i]);      
-    }
+    }a
 }
 
 function map(array, cb) {

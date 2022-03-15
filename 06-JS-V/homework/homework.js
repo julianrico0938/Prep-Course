@@ -29,7 +29,7 @@ function agregarMetodoPrototype(Constructor) {
   // Tu código:
   Constructor.prototype.saludar = function(){
     return "Hello World!"
-  }
+  };
   return Constructor;
 }
 

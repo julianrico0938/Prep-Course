@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:silver;
+}
+h1{
+    text-align: center;
+    color: crimson;
+    font-family: Arial;
+}
+h2{
+    text-align: center;
+    color: crimson;
+    font-family: Arial;
+}
+p{
+    font-family: Arial;
+    font-size: 16px;
+    text-align: center;
+}
+li{
+    list-style-type: disc;
+    font-family: Arial;
+}
+img{
+    display:block;
+    margin:auto;
+}
