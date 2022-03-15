@@ -68,11 +68,12 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  var email2 = null;
-  if (usuario.email == email2) {
-    return false;
-  }else{
+  //var email2 = null;
+  //if(usuario.email == email2)
+  if (usuario.email) {
     return true;
+  }else{
+    return false;
   }
 }
 
@@ -94,7 +95,7 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  if (usuario['password'] === password) {
+  if (usuario.password === password) {
     return true;
   }else{
     return false;
@@ -153,6 +154,13 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
+  producto.calcularPrecioDescuento = function(){
+    return this.precio - (this.precio * this.porcentajeDeDescuento);
+    
+  }
+  return producto;
+
+
 
 }
 
